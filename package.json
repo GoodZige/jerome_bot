@@ -1,0 +1,42 @@
+{
+  "name": "jerome_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_OPTIONS=\"--no-warnings --loader=ts-node/esm\" node src/index.ts",
+    "start:js": "node examples/index.js"
+  },
+  "type": "module",
+  "author": "Zige",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "openai": "^3.2.1",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^1.18.1",
+    "wechaty-cqrs": "^0.7.5",
+    "wechaty-plugin-contrib": "^1.11.1",
+    "wechaty-puppet-oicq": "^1.10.2",
+    "wechaty-puppet-walnut": "^1.11.6",
+    "wechaty-puppet-wechat": "^1.18.1",
+    "wechaty-puppet-wechat4u": "~1.11.1",
+    "wechaty-puppet-whatsapp": "^1.19.0",
+    "wechaty-puppet-xp": "^1.10.20"
+  },
+  "devDependencies": {
+    "@chatie/eslint-config": "^1.0.4",
+    "@chatie/git-scripts": "^0.6.2",
+    "@chatie/tsconfig": "^4.6.3",
+    "check-node-version": "^4.2.1",
+    "is-pr": "^2.0.0",
+    "ts-node": "^10.9.1",
+    "wechaty-puppet-mock": "^1.18.2"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
+}
